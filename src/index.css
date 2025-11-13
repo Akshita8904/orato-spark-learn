@@ -55,48 +55,48 @@ All colors MUST be HSL.
   }
 
   .light {
-    /* Orato Light Theme - Colorful & Modern */
+    /* Orato Light Theme - Blue & Camel Palette */
     
     /* Base Colors */
-    --background: 205 56% 95%;       /* Soft Sky Blue tint */
-    --foreground: 211 76% 14%;       /* Deep Blue text */
+    --background: 0 0% 98%;          /* Off-white background */
+    --foreground: 223 100% 7%;       /* Navy text */
     
     /* Card - Clean white */
     --card: 0 0% 100%;               /* White cards */
-    --card-foreground: 211 76% 14%;
+    --card-foreground: 223 100% 7%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 211 76% 14%;
+    --popover-foreground: 223 100% 7%;
     
     /* Brand Colors */
-    --primary: 219 50% 46%;          /* Serene Blue */
+    --primary: 214 73% 70%;          /* Blue #7CA7EB */
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 353 49% 53%;        /* Rouge Red */
+    --secondary: 11 28% 20%;         /* Chocolate #402924 */
     --secondary-foreground: 0 0% 100%;
     
     /* Muted & Subtle */
-    --muted: 205 56% 90%;            /* Light Sky Blue */
-    --muted-foreground: 211 60% 30%; /* Darker blue-gray */
+    --muted: 214 73% 95%;            /* Light blue tint */
+    --muted-foreground: 223 100% 20%; /* Lighter navy */
     
-    --accent: 21 89% 80%;            /* Peach */
-    --accent-foreground: 211 76% 14%;
+    --accent: 73 58% 73%;            /* Camel #CBE290 */
+    --accent-foreground: 223 100% 7%;
     
-    --destructive: 353 49% 53%;      /* Rouge Red */
+    --destructive: 11 28% 20%;       /* Chocolate */
     --destructive-foreground: 0 0% 100%;
     
     /* Borders & Inputs */
-    --border: 205 56% 83%;           /* Sky Blue border */
-    --input: 205 56% 88%;            /* Lighter Sky Blue */
-    --ring: 219 50% 46%;
+    --border: 214 73% 85%;           /* Light blue border */
+    --input: 214 73% 90%;            /* Lighter blue input */
+    --ring: 214 73% 70%;
     
     /* Glow effects */
-    --glow-gold: 21 89% 80% / 0.3;   /* Peach glow */
-    --glow-teal: 356 73% 78% / 0.3;  /* Coral Pink glow */
+    --glow-gold: 73 58% 73% / 0.3;   /* Camel glow */
+    --glow-teal: 214 73% 70% / 0.3;  /* Blue glow */
     
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(21 89% 80% / 0.2), hsl(21 89% 80% / 0.05));
-    --gradient-teal: linear-gradient(135deg, hsl(356 73% 78% / 0.2), hsl(356 73% 78% / 0.05));
+    --gradient-gold: linear-gradient(135deg, hsl(73 58% 73% / 0.2), hsl(73 58% 73% / 0.05));
+    --gradient-teal: linear-gradient(135deg, hsl(214 73% 70% / 0.2), hsl(214 73% 70% / 0.05));
   }
 }
 
