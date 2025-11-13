@@ -55,55 +55,55 @@ All colors MUST be HSL.
   }
 
   .light {
-    /* Orato Light Theme - Blue & Camel Palette */
+    /* Orato Light Theme - Midnight & Pearl Palette */
     
     /* Base Colors */
-    --background: 0 0% 98%;          /* Off-white background */
-    --foreground: 223 100% 7%;       /* Navy text */
+    --background: 55 68% 94%;        /* Pearl Perfect #FBF9E4 */
+    --foreground: 0 0% 0%;           /* Noir - text */
     
-    /* Card - Clean white */
-    --card: 0 0% 100%;               /* White cards */
-    --card-foreground: 223 100% 7%;
+    /* Card - Slightly lighter than background */
+    --card: 0 0% 100%;               /* White cards for contrast */
+    --card-foreground: 0 0% 0%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 223 100% 7%;
+    --popover-foreground: 0 0% 0%;
     
     /* Brand Colors */
-    --primary: 214 73% 70%;          /* Blue #7CA7EB */
-    --primary-foreground: 0 0% 100%;
+    --primary: 211 63% 19%;          /* Midnight #122C4F */
+    --primary-foreground: 55 68% 94%;
     
-    --secondary: 11 28% 20%;         /* Chocolate #402924 */
+    --secondary: 214 47% 56%;        /* Ocean #5B88C2 */
     --secondary-foreground: 0 0% 100%;
     
     /* Muted & Subtle */
-    --muted: 214 73% 95%;            /* Light blue tint */
-    --muted-foreground: 223 100% 20%; /* Lighter navy */
+    --muted: 55 68% 88%;             /* Darker Pearl tint */
+    --muted-foreground: 211 40% 30%; /* Lighter midnight */
     
-    --accent: 73 58% 73%;            /* Camel #CBE290 */
-    --accent-foreground: 223 100% 7%;
+    --accent: 214 47% 56%;           /* Ocean */
+    --accent-foreground: 0 0% 100%;
     
-    --destructive: 11 28% 20%;       /* Chocolate */
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
     
     /* Borders & Inputs */
-    --border: 214 73% 85%;           /* Light blue border */
-    --input: 214 73% 90%;            /* Lighter blue input */
-    --ring: 214 73% 70%;
+    --border: 55 40% 80%;            /* Soft pearl border */
+    --input: 55 50% 90%;             /* Light pearl input */
+    --ring: 211 63% 19%;
     
     /* Glow effects */
-    --glow-gold: 73 58% 73% / 0.3;   /* Camel glow */
-    --glow-teal: 214 73% 70% / 0.3;  /* Blue glow */
+    --glow-gold: 214 47% 56% / 0.3;  /* Ocean glow */
+    --glow-teal: 211 63% 19% / 0.3;  /* Midnight glow */
     
     /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(73 58% 73% / 0.2), hsl(73 58% 73% / 0.05));
-    --gradient-teal: linear-gradient(135deg, hsl(214 73% 70% / 0.2), hsl(214 73% 70% / 0.05));
+    --gradient-gold: linear-gradient(135deg, hsl(214 47% 56% / 0.15), hsl(214 47% 56% / 0.05));
+    --gradient-teal: linear-gradient(135deg, hsl(211 63% 19% / 0.15), hsl(211 63% 19% / 0.05));
   }
 }
 
 @layer utilities {
   /* Glassmorphism Cards */
   .glass-card {
-    @apply bg-card backdrop-blur-xl border border-border rounded-2xl;
+    @apply bg-card backdrop-blur-xl border border-border rounded-2xl shadow-sm;
   }
   
   /* Glow effects */
@@ -123,6 +123,11 @@ All colors MUST be HSL.
   /* Smooth transitions */
   .transition-smooth {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Ocean hover effect for links */
+  .link-ocean {
+    @apply text-foreground hover:text-secondary transition-colors duration-200;
   }
 }
 
