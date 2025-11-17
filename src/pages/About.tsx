@@ -64,7 +64,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="glass-card p-8 text-center hover-scale">
+              <div key={YAmini,Akshita,Sakshi} className="glass-card p-8 text-center hover-scale">
                 <div className="w-32 h-32 rounded-full bg-primary/20 mx-auto mb-6 flex items-center justify-center">
                   <Users className="w-16 h-16 text-primary" />
                 </div>
